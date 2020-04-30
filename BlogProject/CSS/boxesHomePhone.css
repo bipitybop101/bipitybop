@@ -1,0 +1,467 @@
+.box1 {
+    margin: 5px;
+    grid-area: bx1;
+    height: 150px;
+    width: 450px;
+    display: grid;
+    grid-template-areas: "sbA" "sbT" "sbD" "sbP" "sbM";
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px double transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(51, 188, 237), rgb(0, 102, 255));
+    box-sizing: border-box;
+    border-radius: .5em;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    justify-self: center;
+}
+
+.box1 .subBoxAuthor {
+    display: grid;
+    margin: 5px;
+    grid-area: sbA;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "twoXOne twoXTwo twoXThree";
+    position: relative;
+}
+
+.box1 .subBoxAuthor #twoXOne {
+    margin: 1px;
+    grid-area: 1/1/1/1;
+}
+
+.box1 .subBoxAuthor #twoXOne .box1Name {
+    font-size: 12px;
+}
+
+.box1 .subBoxAuthor #twoXTwo {
+    margin: 1px;
+    grid-area: 1/2/1/2;
+}
+
+.box1 .subBoxAuthor #twoXThree {
+    display: grid;
+    margin: 1px;
+    grid-area: 1/3/1/3;
+    height: 30px;
+}
+
+.box1 .subBoxAuthor #twoXThree #avatar1 {
+    justify-self: end;
+    max-width: 100%;
+}
+
+.box1 .subBoxTitle {
+    margin: 5px;
+    grid-area: sbT;
+    margin-top: -25px;
+}
+
+.box1 .subBoxTitle #box1Title {
+    font-size: 20px
+}
+
+.box1 .subBoxDate {
+    margin: 5px;
+    grid-area: sbD;
+    align-self: start;
+    margin-top: -12px;
+    font-size: 8px;
+}
+
+.box1 .subBoxPreview {
+    margin: 5px;
+    margin-top: -25px;
+    grid-area: sbP;
+    font-size: 8px;
+}
+
+.box2 {
+    margin: 5px;
+    grid-area: bx2;
+    height: 150px;
+    width: 450px;
+    display: grid;
+    grid-template-areas: "sbA" "sbT" "sbD" "sbP" "sbM";
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px double transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(51, 188, 237), rgb(0, 102, 255));
+    box-sizing: border-box;
+    border-radius: .5em;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    justify-self: center;
+}
+
+.box2 .subBoxAuthor {
+    display: grid;
+    margin: 5px;
+    grid-area: sbA;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "twoXOne twoXTwo twoXThree";
+    position: relative;
+}
+
+.box2 .subBoxAuthor #twoXOne {
+    margin: 1px;
+    grid-area: 1/1/1/1;
+}
+
+.box2 .subBoxAuthor #twoXOne .box1Name {
+    font-size: 12px;
+}
+
+.box2 .subBoxAuthor #twoXTwo {
+    margin: 1px;
+    grid-area: 1/2/1/2;
+}
+
+.box2 .subBoxAuthor #twoXThree {
+    display: grid;
+    margin: 1px;
+    grid-area: 1/3/1/3;
+    height: 30px;
+}
+
+.box2 .subBoxAuthor #twoXThree #avatar1 {
+    justify-self: end;
+    max-width: 100%;
+}
+
+.box2 .subBoxTitle {
+    margin: 5px;
+    grid-area: sbT;
+    margin-top: -25px;
+}
+
+.box2 .subBoxTitle #box1Title {
+    font-size: 20px
+}
+
+.box2 .subBoxDate {
+    margin: 5px;
+    grid-area: sbD;
+    align-self: start;
+    margin-top: -12px;
+    font-size: 8px;
+}
+
+.box2 .subBoxPreview {
+    margin: 5px;
+    margin-top: -25px;
+    grid-area: sbP;
+    font-size: 8px;
+}
+
+.box3 {
+    margin: 5px;
+    grid-area: bx3;
+    height: 150px;
+    width: 450px;
+    display: grid;
+    grid-template-areas: "sbA" "sbT" "sbD" "sbP" "sbM";
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px double transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(51, 188, 237), rgb(0, 102, 255));
+    box-sizing: border-box;
+    border-radius: .5em;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    justify-self: center;
+}
+
+.box3 .subBoxAuthor {
+    display: grid;
+    margin: 5px;
+    grid-area: sbA;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "twoXOne twoXTwo twoXThree";
+    position: relative;
+}
+
+.box3 .subBoxAuthor #twoXOne {
+    margin: 1px;
+    grid-area: 1/1/1/1;
+}
+
+.box3 .subBoxAuthor #twoXOne .box1Name {
+    font-size: 12px;
+}
+
+.box3 .subBoxAuthor #twoXTwo {
+    margin: 1px;
+    grid-area: 1/2/1/2;
+}
+
+.box3 .subBoxAuthor #twoXThree {
+    display: grid;
+    margin: 1px;
+    grid-area: 1/3/1/3;
+    height: 30px;
+}
+
+.box3 .subBoxAuthor #twoXThree #avatar1 {
+    justify-self: end;
+    max-width: 100%;
+}
+
+.box3 .subBoxTitle {
+    margin: 5px;
+    grid-area: sbT;
+    margin-top: -25px;
+}
+
+.box3 .subBoxTitle #box1Title {
+    font-size: 20px
+}
+
+.box3 .subBoxDate {
+    margin: 5px;
+    grid-area: sbD;
+    align-self: start;
+    margin-top: -12px;
+    font-size: 8px;
+}
+
+.box3 .subBoxPreview {
+    margin: 5px;
+    margin-top: -25px;
+    grid-area: sbP;
+    font-size: 8px;
+}
+
+.box4 {
+    margin: 5px;
+    grid-area: bx4;
+    height: 150px;
+    width: 450px;
+    display: grid;
+    grid-template-areas: "sbA" "sbT" "sbD" "sbP" "sbM";
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px double transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(51, 188, 237), rgb(0, 102, 255));
+    box-sizing: border-box;
+    border-radius: .5em;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    justify-self: center;
+}
+
+.box4 .subBoxAuthor {
+    display: grid;
+    margin: 5px;
+    grid-area: sbA;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "twoXOne twoXTwo twoXThree";
+    position: relative;
+}
+
+.box4 .subBoxAuthor #twoXOne {
+    margin: 1px;
+    grid-area: 1/1/1/1;
+}
+
+.box4 .subBoxAuthor #twoXOne .box1Name {
+    font-size: 12px;
+}
+
+.box4 .subBoxAuthor #twoXTwo {
+    margin: 1px;
+    grid-area: 1/2/1/2;
+}
+
+.box4 .subBoxAuthor #twoXThree {
+    display: grid;
+    margin: 1px;
+    grid-area: 1/3/1/3;
+    height: 30px;
+}
+
+.box4 .subBoxAuthor #twoXThree #avatar1 {
+    justify-self: end;
+    max-width: 100%;
+}
+
+.box4 .subBoxTitle {
+    margin: 5px;
+    grid-area: sbT;
+    margin-top: -25px;
+}
+
+.box4 .subBoxTitle #box1Title {
+    font-size: 20px
+}
+
+.box4 .subBoxDate {
+    margin: 5px;
+    grid-area: sbD;
+    align-self: start;
+    margin-top: -12px;
+    font-size: 8px;
+}
+
+.box4 .subBoxPreview {
+    margin: 5px;
+    margin-top: -25px;
+    grid-area: sbP;
+    font-size: 8px;
+}
+
+.box5 {
+    margin: 5px;
+    grid-area: bx5;
+    height: 150px;
+    width: 450px;
+    display: grid;
+    grid-template-areas: "sbA" "sbT" "sbD" "sbP" "sbM";
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px double transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(51, 188, 237), rgb(0, 102, 255));
+    box-sizing: border-box;
+    border-radius: .5em;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    justify-self: center;
+}
+
+.box5 .subBoxAuthor {
+    display: grid;
+    margin: 5px;
+    grid-area: sbA;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "twoXOne twoXTwo twoXThree";
+    position: relative;
+}
+
+.box5 .subBoxAuthor #twoXOne {
+    margin: 1px;
+    grid-area: 1/1/1/1;
+}
+
+.box5 .subBoxAuthor #twoXOne .box1Name {
+    font-size: 12px;
+}
+
+.box5 .subBoxAuthor #twoXTwo {
+    margin: 1px;
+    grid-area: 1/2/1/2;
+}
+
+.box5 .subBoxAuthor #twoXThree {
+    display: grid;
+    margin: 1px;
+    grid-area: 1/3/1/3;
+    height: 30px;
+}
+
+.box5 .subBoxAuthor #twoXThree #avatar1 {
+    justify-self: end;
+    max-width: 100%;
+}
+
+.box5 .subBoxTitle {
+    margin: 5px;
+    grid-area: sbT;
+    margin-top: -25px;
+}
+
+.box5 .subBoxTitle #box1Title {
+    font-size: 20px
+}
+
+.box5 .subBoxDate {
+    margin: 5px;
+    grid-area: sbD;
+    align-self: start;
+    margin-top: -12px;
+    font-size: 8px;
+}
+
+.box5 .subBoxPreview {
+    margin: 5px;
+    margin-top: -25px;
+    grid-area: sbP;
+    font-size: 8px;
+}
+
+.box6 {
+    margin: 5px;
+    grid-area: bx6;
+    height: 150px;
+    width: 450px;
+    display: grid;
+    grid-template-areas: "sbA" "sbT" "sbD" "sbP" "sbM";
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px double transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(51, 188, 237), rgb(0, 102, 255));
+    box-sizing: border-box;
+    border-radius: .5em;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    justify-self: center;
+}
+
+.box6 .subBoxAuthor {
+    display: grid;
+    margin: 5px;
+    grid-area: sbA;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "twoXOne twoXTwo twoXThree";
+    position: relative;
+}
+
+.box6 .subBoxAuthor #twoXOne {
+    margin: 1px;
+    grid-area: 1/1/1/1;
+}
+
+.box6 .subBoxAuthor #twoXOne .box1Name {
+    font-size: 12px;
+}
+
+.box6 .subBoxAuthor #twoXTwo {
+    margin: 1px;
+    grid-area: 1/2/1/2;
+}
+
+.box6 .subBoxAuthor #twoXThree {
+    display: grid;
+    margin: 1px;
+    grid-area: 1/3/1/3;
+    height: 30px;
+}
+
+.box6 .subBoxAuthor #twoXThree #avatar1 {
+    justify-self: end;
+    max-width: 100%;
+}
+
+.box6 .subBoxTitle {
+    margin: 5px;
+    grid-area: sbT;
+    margin-top: -25px;
+}
+
+.box6 .subBoxTitle #box1Title {
+    font-size: 20px
+}
+
+.box6 .subBoxDate {
+    margin: 5px;
+    grid-area: sbD;
+    align-self: start;
+    margin-top: -12px;
+    font-size: 8px;
+}
+
+.box6 .subBoxPreview {
+    margin: 5px;
+    margin-top: -25px;
+    grid-area: sbP;
+    font-size: 8px;
+}

@@ -1,0 +1,254 @@
+header {
+    text-align: center;
+}
+
+.side a {
+    background-color: #262626;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    /* border: 1px solid rgb(20, 20, 20); */
+}
+
+.side a:hover {
+    background-color: #33bced;
+    border: none;
+}
+
+.subscribe {
+    flex-direction: row;
+}
+
+.subscribe button {
+    color: white;
+    border: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+
+/*---------------------------------------------------------------LAYOUT FOR PHONE (BELOW)------------------------------------------------------------------*/
+
+@media(min-width: 480px) and (max-width: 1023px) {
+    .everything {
+        font-family: 'Raleway', sans-serif;
+        display: grid;
+        width: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "hd" "sb" "sd" "cnt" "img" "ft";
+    }
+     ::-webkit-scrollbar {
+        width: 10px;
+    }
+     ::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(rgb(51, 188, 237), rgb(0, 102, 255));
+        border-radius: 10px;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background-image: linear-gradient(rgb(51, 188, 237, 0.8), rgb(0, 102, 255, 0.8));
+        border-radius: 10px;
+    }
+    header {
+        height: 150px;
+        margin: 0;
+        width: 70%;
+        line-height: 0.5;
+        grid-area: hd;
+        font-size: .75em;
+    }
+    .side {
+        width: 100%;
+        /* justify-self: center; */
+        grid-area: sd;
+        display: flex;
+        background-color: #222;
+        overflow: hidden;
+        border-radius: 5px;
+        height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        align-items: center;
+    }
+    .side a {
+        float: left;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 1em;
+    }
+    .side a:hover {
+        background-color: rgb(51, 188, 237);
+    }
+    .content {
+        width: 100%;
+        height: auto;
+        grid-area: cnt;
+        line-height: 1.75;
+        font-size: 80%
+    }
+    .subscribe {
+        margin: 0;
+        grid-area: sb;
+        width: 60%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+    }
+    .subscribe button {
+        border-radius: 10px;
+        padding: 10px;
+        width: 70%;
+        height: 66%;
+        text-decoration: none;
+        font-size: 2em;
+        background-color: rgb(51, 188, 237);
+        border: none;
+        color: white;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        cursor: pointer;
+    }
+    .subscribe button:hover {
+        background-color: rgb(51, 188, 237, 0.8)
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 10px;
+        height: auto;
+        grid-area: img;
+        width: 200px;
+    }
+    footer {
+        height: 50px;
+        grid-area: ft;
+        background-color: #e4e4e4;
+        border-radius: 3px;
+    }
+    footer #footerItems {
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        line-height: 1.15;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        color: #222;
+    }
+}
+
+
+/*---------------------------------------------------------------LAYOUT FOR COMPUTER (BELOW)------------------------------------------------------------------*/
+
+@media(min-width: 1024px) {
+    .everything {
+        font-family: 'Raleway', sans-serif;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "hd hd hd hd hd hd hd hd hd hd" "sd cnt cnt cnt cnt cnt cnt cnt cnt img" "sb cnt cnt cnt cnt cnt cnt cnt cnt img" "ft ft ft ft ft ft ft ft ft ft";
+    }
+     ::-webkit-scrollbar {
+        width: 10px;
+    }
+     ::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(rgb(51, 188, 237), rgb(0, 102, 255));
+        border-radius: 10px;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background-image: linear-gradient(rgb(51, 188, 237, 0.8), rgb(0, 102, 255, 0.8));
+        border-radius: 10px;
+    }
+    header {
+        height: 150px;
+        margin: 0;
+        line-height: 0.5;
+        grid-area: hd;
+        font-size: 1.5em;
+    }
+    .side {
+        grid-area: sd;
+    }
+    .side a {
+        background-color: #222;
+        color: white;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+    }
+    .side a:hover {
+        background-color: rgb(51, 188, 237);
+    }
+    .side a#home {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .side a#tools {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .content {
+        margin: 0;
+        height: auto;
+        grid-area: cnt;
+        line-height: 1.75;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .subscribe {
+        display: flexbox;
+        margin: 0px;
+        height: 75px;
+        grid-area: sb;
+    }
+    .subscribe button {
+        border-radius: 10px;
+        padding: 10px;
+        width: 200px;
+        height: 66px;
+        text-decoration: none;
+        font-size: 30px;
+        background-color: rgb(51, 188, 237);
+        border: none;
+        color: white;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        cursor: pointer;
+    }
+    .subscribe button:hover {
+        background-color: rgb(51, 188, 237, 0.8)
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 10px;
+        height: auto;
+        grid-area: img;
+    }
+    footer {
+        height: 50px;
+        grid-area: ft;
+        background-color: #e4e4e4;
+        border-radius: 3px;
+    }
+    footer #footerItems {
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        line-height: 1.15;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        color: #222;
+    }
+}
